@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lbf.dal.mapper.PersonMapper">
+
+    <resultMap id="BaseResultMap" type="com.lbf.dal.po.Person">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+
+    <!--查询单个-->
+    <select id="select" resultMap="BaseResultMap">
+        select
+          id,name
+        from person
+    </select>
+
+
+	
+</mapper>
